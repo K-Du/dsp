@@ -43,11 +43,11 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >> List comprehensions create or alter a list based on some rules. The use of map/filter/reduce vs. list comprehension is a widely debated issue in the world of Python. There is no drastic speed difference so either works fine, it's up to personal preference to choose whichever makes the code clearer. 
 
 ```python
-# These two are the same
+# Map comprehension
 map(str, [1,2,3])
 [str(i) for i in [1,2,3]]
 
-# These two are the same
+# Filter comprehension
 filter(lambda x: type(x) == str, [1,2,'a'])
 [x for x in [1,2,'a'] if type(x) == str]
 
