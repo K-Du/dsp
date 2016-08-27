@@ -20,14 +20,19 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> Sets are unordered and cannot contain duplicate elemetns. They are mutable like lists (but frozensets are immutable). You can do operations like union, intersection, and difference with sets. Sets can be searched through in constant time rather than linear time due to hashing optimizations, but will take more memory space. 
+>> Sets are unordered and cannot contain duplicate elements. They are mutable like lists (but frozensets are immutable). You can do operations like union, intersection, and difference with sets. Sets can be searched through in constant time rather than linear time due to hashing optimizations, but will take more memory space. 
+
 ---
 
 ###Q3. Lambda Function
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> Lambda is an anonymous function that you can use and discard in just one line. `map(lambda x: x[0], ['Hi', 'my', 'name', 'is', 'Kevin']) # Returns ['H', 'm', 'n', 'i', 'K']`
+>> Lambda is used to create an anonymous function in just one line. 
+```python
+map(lambda x: x[0], ['Hi', 'my', 'name', 'is', 'Kevin']) # Returns ['H', 'm', 'n', 'i', 'K']`
+
+```
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
@@ -35,7 +40,6 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
 >> List comprehensions create or alter a list based on some rules. The use of map/filter/reduce vs. list comprehension is a widely debated issue in the world of Python. There is no drastic speed difference so either works fine, it's up to personal preference to choose whichever makes the code clearer. 
-
 
 ---
 
