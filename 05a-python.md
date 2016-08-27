@@ -40,8 +40,7 @@ sorted(lst, key = lambda x: x[1])  # Returns [('Carl', 1), ('Alice', 2), ('Bob',
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> List comprehensions create or alter a list based on some rules. The use of map/filter/reduce vs. list comprehension is a widely debated issue in the world of Python. There is no drastic speed difference so either works fine, it's up to personal preference to choose whichever makes the code clearer. 
-
+>> List comprehensions create or alter a list based on some rules. The use of map/filter/reduce vs. list comprehension is a widely debated issue in the world of Python. There is no drastic speed difference so either works fine, it's up to personal preference to choose whichever makes the code clearer.  
 ```python
 # Map comprehension
 map(str, [1,2,3])
