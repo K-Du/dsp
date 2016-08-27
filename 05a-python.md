@@ -28,7 +28,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> Lambda is used to create an anonymous function in just one line. 
+>> Lambda is used to create an anonymous function in just one line.  
 ```python
 lst = [('Bob', 3), ('Alice', 2), ('Carl', 1)]
 sorted(lst, key = lambda x: x[1])  # Returns [('Carl', 1), ('Alice', 2), ('Bob', 3)]
