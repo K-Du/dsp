@@ -41,6 +41,8 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> List comprehensions create or alter a list based on some rules. The use of map/filter/reduce vs. list comprehension is a widely debated issue in the world of Python. There is no drastic speed difference so either works fine, it's up to personal preference to choose whichever makes the code clearer. 
 
+
+
 ---
 
 ###Complete the following problems by editing the files below:
