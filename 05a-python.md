@@ -30,8 +30,10 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 >> Lambda is used to create an anonymous function in just one line. 
 ```python
-
+lst = [('Bob', 3), ('Alice', 2), ('Carl', 1)]
+sorted(lst, key = lambda x: x[1])  # Returns [('Carl', 1), ('Alice', 2), ('Bob', 3)]
 ```
+
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
@@ -39,6 +41,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
 >> List comprehensions create or alter a list based on some rules. The use of map/filter/reduce vs. list comprehension is a widely debated issue in the world of Python. There is no drastic speed difference so either works fine, it's up to personal preference to choose whichever makes the code clearer. 
+
 ```python
 # These two are the same
 map(str, [1,2,3])
@@ -53,6 +56,7 @@ filter(lambda x: type(x) == str, [1,2,'a'])
 
 # Dict comprehension
 {k:v for k,v in [('A',1), ('B',2), ('C',3)]}  # Returns {'A': 1, 'B': 2, 'C': 3}
+```
 
 ---
 
