@@ -44,15 +44,12 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 ```python
 # Map comprehension
 map(str, [1,2,3])
-[str(i) for i in [1,2,3]]
-
+[str(i) for i in [1,2,3]] 
 # Filter comprehension
 filter(lambda x: type(x) == str, [1,2,'a'])
-[x for x in [1,2,'a'] if type(x) == str]
-
+[x for x in [1,2,'a'] if type(x) == str]  
 # Set comprehension
-{i for i in [1,1,2,2,3]}  # Returns {1,2,3}
-
+{i for i in [1,1,2,2,3]}  # Returns {1,2,3}  
 # Dict comprehension
 {k:v for k,v in [('A',1), ('B',2), ('C',3)]}  # Returns {'A': 1, 'B': 2, 'C': 3}
 ```
