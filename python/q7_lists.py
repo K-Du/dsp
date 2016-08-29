@@ -15,7 +15,7 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    return sum(1 for s in words if len(s) >= 2 and s[0] == s[-1]) 
 
 
 def front_x(words):
@@ -32,7 +32,7 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+    return sorted(words, key = lambda x: (x[0] != 'x', x[:]))
 
 
 def sort_last(tuples):
@@ -49,7 +49,7 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    return sorted(tuples, key = lambda x: x[-1])
 
 
 def remove_adjacent(nums):
