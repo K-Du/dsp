@@ -25,7 +25,8 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> 3 different job titles (assuming the "is Biostatistics" is the same as "of Biostatistics")  
+`Counter({'Professor of Biostatistics': 13, 'Associate Professor of Biostatistics': 12, 'Assistant Professor of Biostatistics': 11, 'Assistant Professor is Biostatistics': 1})`
 
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
