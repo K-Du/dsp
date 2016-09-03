@@ -68,7 +68,8 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    from itertools import groupby
+    return map(lambda x: x[0], groupby(nums))
 
 
 def linear_merge(list1, list2):
@@ -85,4 +86,5 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    from heapq import merge
+    return list(merge(list1, list2))
