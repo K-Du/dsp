@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> vim because it's standard and very popular
 
 --
 
@@ -68,6 +68,5 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> I will use Spyder because it's the default editor for Anaconda. Interesting features is that there is a built-in console so you can run your code quickly. Keyboard shortcuts: F5 is run code, F9 is run only code you highlighted, Ctrl+T opens a new console terminal, Ctrl+N opens a new code editor tab. I customized the colors of my editor to make it darker. 
  
