@@ -90,7 +90,7 @@ Answer is 5/11
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> A frequentist deals with only raw frequenecies (probabilities) whereas a Bayesian considers prior knowledge as well. 
 
 ---
 
