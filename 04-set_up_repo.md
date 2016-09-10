@@ -22,7 +22,7 @@ It's easy and free to [sign up](https://github.com/join).
 Make sure that you are [signed in](https://github.com/login) to GitHub.
 
 
-## Step 3: Fork this repository
+## Step 3: Fork this repository 
 
 Click the **Fork** button at the upper right hand corner of the page:
 
