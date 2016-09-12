@@ -1,15 +1,33 @@
-#!/usr/bin/env python
+from random import choice
 
-# Write a Markov text generator, [markov.py](python/markov.py). Your program should be called from the command line with two arguments: the name of a file containing text to read, and the number of words to generate. For example, if `chains.txt` contains the short story by Frigyes Karinthy, we could run:
+with open('C:/Users/Kevin/Downloads/story.txt', 'r') as text:
+    words = text.read().split()
 
-# ```bash
-# ./markov.py chains.txt 40
-# ```
-
-# A possible output would be:
-
-# > show himself once more than the universe and what I often catch myself playing our well-connected game went on. Our friend was absolutely correct: nobody from the group needed this way. We never been as the Earth has the network of eternity.
-
-# There are design choices to make; feel free to experiment and shape the program as you see fit. Jeff Atwood's [Markov and You](http://blog.codinghorror.com/markov-and-you/) is a fun place to get started learning about what you're trying to make.
-
-> REPLACE THIS TEXT WITH YOUR PROGRAM
+def create_dict(input_list):
+    # Creates a dict using every two words as a tuple key and the following word as the value
+    d = {}    
+    for i in xrange(len(input_list)-2):
+        d.setdefault((input_list[i], input_list[i+1]), []).append(input_list[i+2])
+    return d 
+ 
+def generate_sentence(d):
+    # Generates a random markov sentence that will start with a uppercase word
+    # and end with a period, question mark, or exclamation mark
+    capital_words = [w for w in d.keys() if w[0][0].isupper() and w[0].isalpha()]
+    start = choice(capital_words)
+    word1, word2 = start[0], start[1]
+    sentence = []
+    sentence.extend((word1,word2))
+    
+    while True:
+        word3 = choice(d[(word1, word2)])
+        sentence.append(word3)
+        if word3[-1] in '.!?':
+            break
+        word1, word2 = word2, word3
+ 
+    return ' '.join(sentence)
+    
+if __name__ == "__main__":
+    d = create_dict(words)
+    print generate_sentence(d)
