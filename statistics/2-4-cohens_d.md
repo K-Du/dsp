@@ -22,5 +22,5 @@ others = live[live.birthord != 1].totalwgt_lb
 print CohenEffectSize(firsts, others)
 ```
 
-Cohen's D for birth weight is -0.08867, which is low just like the value for pregnancy length (0.029). This means the difference in standard deviations is only 0.08867, thus we can assume there is not a significant difference between the groups.
+Cohen's D for birth weight is -0.08867, which is low just like the value for pregnancy length (0.029). This means the difference in means is only 0.08867 standard deviations, thus we can assume there is not a significant difference between the groups.
  
