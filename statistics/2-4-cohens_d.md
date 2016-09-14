@@ -24,3 +24,4 @@ print CohenEffectSize(firsts, others)
 
 Cohen's D for birth weight is -0.08867, which is low just like the value for pregnancy length (0.029). This means the difference in means is only 0.08867 standard deviations, thus we can assume there is not a significant difference between the groups.
  
+ 
