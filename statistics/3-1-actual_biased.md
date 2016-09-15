@@ -26,5 +26,5 @@ thinkplot.Show(xlabel='children', ylabel='pmf')
 print pmf.Mean()
 print biased_pmf.Mean()
 ```
-Actual mean: 1.02420515504
+Actual mean: 1.02420515504  
 Biased mean: 2.40367910066
