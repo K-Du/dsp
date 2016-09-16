@@ -17,5 +17,7 @@ rand_cdf = thinkstats2.Cdf(rand_nums)
 thinkplot.Cdf(rand_cdf)
 thinkplot.Show(xlabel='random value', ylabel='Cdf')
 ```
+![pmf](pmf.png)
+![cdf](cdf.png)
 
 Yes the distribution is uniform because the cdf is approximately a straight line.
