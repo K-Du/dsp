@@ -21,3 +21,4 @@ thinkplot.Show(xlabel='random value', ylabel='Cdf')
 ![cdf](cdf.png)
 
 Yes the distribution is uniform because the cdf is approximately a straight line.
+ 
